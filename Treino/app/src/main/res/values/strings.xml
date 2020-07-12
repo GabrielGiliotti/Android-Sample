@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Treino</string>
+    <string name="MyString">My First String App</string>
+    <string name="xxx">xxx</string>
+    <string name="scene1">Scene1</string>
+    <string name="animation_layout_master">Animation Layout Master</string>
+    <string name="scene2">Scene2</string>
+    <string name="back">back</string>
+    <string name="next">next</string>
+    <string name="backgroundcolor">backgroundcolor</string>
+    <string name="todo">TODO</string>
+    <string name="Next">Next</string>
+    <string name="Back">Back</string>
+</resources>
