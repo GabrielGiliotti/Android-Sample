@@ -8,12 +8,15 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.lang.reflect.Type;
+
 public class SumActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "com.tutorial.treino.MESSAGE";
     private EditText firstNumber;
     private EditText secondNumber;
     private TextView resultNumber;
+    private int firstField;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,15 +35,34 @@ public class SumActivity extends AppCompatActivity {
 
     public void Soma(View view) {
 
-        int resultado = Integer.parseInt(firstNumber.getText().toString()) +
-                        Integer.parseInt(secondNumber.getText().toString());
-        resultNumber.setText("Valor calculado: " + resultado);
-    }
+        int firstField = 0;
+        int secondField = 0;
+        try
+        {
+            firstField = Integer.parseInt(firstNumber.getText().toString());
+        }
+        catch (Exception ex)
+        {
+            System.out.println("Invalid Value: " + ex);
+        }
 
-    //public void selecionarBotao(View v) {
-    //    int resultado = new Random().nextInt(20);
-    //    resultado += 1;
-    //    TextView novoTexto = findViewById(R.id.textoResultado);
-    //    novoTexto.setText("Resultado: " + resultado);
-    //}
+        try
+        {
+            secondField = Integer.parseInt(secondNumber.getText().toString());
+        }
+        catch (Exception ex)
+        {
+            System.out.println("Invalid Value: " + ex);
+        }
+
+        try
+        {
+            int resultado = firstField + secondField;
+            resultNumber.setText("Valor calculado: " + resultado);
+        }
+        catch (Exception ex)
+        {
+            System.out.println("Invalid Sum: " + ex);
+        }
+    }
 }

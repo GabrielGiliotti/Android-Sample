@@ -9,6 +9,8 @@
     <string name="next">next</string>
     <string name="backgroundcolor">backgroundcolor</string>
     <string name="todo">TODO</string>
-    <string name="Next">Next</string>
-    <string name="Back">Back</string>
+    <string name="Next1">Next</string>
+    <string name="Back1">Back</string>
+    <string name="Next2">Next</string>
+    <string name="Back2">Back</string>
 </resources>

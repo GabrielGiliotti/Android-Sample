@@ -44,12 +44,12 @@ public class BackgroundChangeColorActivity extends AppCompatActivity {
     }
 
     public void lastAnimationDrawableActivity(View view) {
-        Intent i = new Intent(this, AnimationDrawableActivity.class);
-        startActivity(i);
-    }
+            Intent i = new Intent(this, AnimationDrawableActivity.class);
+            startActivity(i);
+        }
 
-    public void next__Activity(View view) {
-        Intent i = new Intent(this, BackgroundChangeColorActivity.class);
-        startActivity(i);
+        public void nextVectorAnimationDrawableActivity(View view) {
+            Intent i = new Intent(this, VectorAnimationDrawableActivity.class);
+            startActivity(i);
     }
 }

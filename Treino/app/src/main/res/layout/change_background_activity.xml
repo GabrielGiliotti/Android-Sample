@@ -21,9 +21,9 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="122dp"
         android:layout_marginEnd="127dp"
-        android:onClick="next__Activity"
-        android:text="@string/Next"
-        android:layout_marginRight="157dp" />
+        android:layout_marginRight="157dp"
+        android:onClick="nextVectorAnimationDrawableActivity"
+        android:text="@string/Next1" />
 
     <Button
         android:id="@+id/button13"
@@ -35,7 +35,7 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="242dp"
         android:layout_marginEnd="127dp"
+        android:layout_marginRight="157dp"
         android:onClick="lastAnimationDrawableActivity"
-        android:text="@string/Back"
-        android:layout_marginRight="157dp" />
+        android:text="@string/Back1" />
 </RelativeLayout>
